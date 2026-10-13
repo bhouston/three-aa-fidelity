@@ -1,0 +1,4 @@
+[submodule "submodules/fidelity-kit"]
+	path = submodules/fidelity-kit
+	url = https://github.com/bhouston/fidelity-kit.git
+	branch = feat/88-dynamic-fidelity
