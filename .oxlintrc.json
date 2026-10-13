@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "ignorePatterns": ["submodules/**", "render/public/variants/**", "**/dist/**", ".cache/**"],
+  "rules": { "eslint/no-underscore-dangle": "off" },
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "plugins": ["eslint", "oxc", "unicorn"]
+}

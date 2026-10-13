@@ -1,0 +1,17 @@
+{
+  "name": "@three-aa-fidelity/render",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --strictPort --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --port 5173 --strictPort --host 127.0.0.1"
+  },
+  "dependencies": {
+    "fidelity-kit": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^8.1.3"
+  }
+}

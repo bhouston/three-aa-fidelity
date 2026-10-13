@@ -1,0 +1,31 @@
+{
+  "name": "three-aa-fidelity",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Anti-aliasing and temporal fidelity suite for three.js: TRAA, TAAU, FXAA, SMAA, MSAA and temporal effects against supersampled references.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm build:fidelity-kit && pnpm --filter @three-aa-fidelity/render build",
+    "build:fidelity-kit": "tsc -b submodules/fidelity-kit/packages/cli && pnpm --filter @fidelity-kit/viewer build",
+    "build:variants": "node scripts/build-three-variants.mjs",
+    "render:dev": "pnpm --filter @three-aa-fidelity/render dev",
+    "render:preview": "pnpm --filter @three-aa-fidelity/render preview",
+    "dynamic": "fidelity-kit dynamic --registry registry.json --out fidelity-results",
+    "site:dev": "fidelity-kit dev fidelity-results --registry registry.json",
+    "site:build": "node scripts/build-site.mjs",
+    "lint": "oxlint render scripts test",
+    "format": "oxfmt render scripts test .github README.md package.json three-variants.json vitest.config.js",
+    "format:check": "oxfmt --check render scripts test .github README.md package.json three-variants.json vitest.config.js",
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "fidelity-kit": "workspace:*",
+    "oxfmt": "^0.58.0",
+    "oxlint": "^1.73.0",
+    "typescript": "^7",
+    "vitest": "^5.0.2"
+  },
+  "packageManager": "pnpm@11.27.0"
+}

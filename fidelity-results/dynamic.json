@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "output": "motion",
+  "reference": "reference",
+  "results": {
+    "traa-challenge-pan": {
+      "no-aa": {
+        "psnr": 20.53741317794546,
+        "temporalPsnr": 23.195401564212208,
+        "sharpness": 1.3852720648956445,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:32:59.315Z"
+      },
+      "msaa-4x": {
+        "psnr": 21.21210940779701,
+        "temporalPsnr": 24.047894903423895,
+        "sharpness": 1.347333650952538,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:02.179Z"
+      },
+      "fxaa": {
+        "psnr": 21.481326221889617,
+        "temporalPsnr": 26.61379232597283,
+        "sharpness": 0.5111043505014252,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:05.046Z"
+      },
+      "smaa": {
+        "psnr": 21.337906875474243,
+        "temporalPsnr": 23.913840791046873,
+        "sharpness": 1.231183444934418,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:07.909Z"
+      },
+      "traa.dev": {
+        "psnr": 24.40298422837484,
+        "temporalPsnr": 30.89075881022194,
+        "sharpness": 0.4571935987362131,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:11.275Z"
+      },
+      "traa.fixed": {
+        "psnr": 26.025807646821363,
+        "temporalPsnr": 32.10536627370652,
+        "sharpness": 0.6229381192374991,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:14.630Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 24.91485269301497,
+        "temporalPsnr": 31.88768651730555,
+        "sharpness": 0.47494561081081926,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:17.512Z"
+      },
+      "taau.dev": {
+        "psnr": 21.349896922647638,
+        "temporalPsnr": 31.17262299344319,
+        "sharpness": 0.1680575080256841,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:20.381Z"
+      },
+      "taau.fixed": {
+        "psnr": 21.439617665868695,
+        "temporalPsnr": 31.338267030249977,
+        "sharpness": 0.16644685876416795,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:23.256Z"
+      },
+      "traa.traa-catmull-rom": {
+        "psnr": 25.279763681171833,
+        "temporalPsnr": 30.85088626475526,
+        "sharpness": 0.5977612848273296,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:26.133Z"
+      },
+      "traa.morph-velocity": {
+        "psnr": 24.905219458993383,
+        "temporalPsnr": 31.886129773744326,
+        "sharpness": 0.4752624132021377,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:29.006Z"
+      },
+      "taau.taau-lock": {
+        "psnr": 21.34225710061426,
+        "temporalPsnr": 31.26823479807178,
+        "sharpness": 0.16572941885613704,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:31.882Z"
+      },
+      "taau.taau-black-luma": {
+        "psnr": 21.349896922647638,
+        "temporalPsnr": 31.17262299344319,
+        "sharpness": 0.1680575080256841,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:34.759Z"
+      },
+      "traa-probe.dev": {
+        "psnr": 22.95153301598046,
+        "temporalPsnr": 30.188558058286855,
+        "sharpness": 0.4293756852568639,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:37.634Z"
+      },
+      "traa-probe.fixed": {
+        "psnr": 25.87203841307339,
+        "temporalPsnr": 31.928409255769495,
+        "sharpness": 0.6226232972528207,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:40.519Z"
+      },
+      "traa-probe.velocity-history": {
+        "psnr": 24.31520763051577,
+        "temporalPsnr": 30.767674509488362,
+        "sharpness": 0.45685352029976395,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:33:43.395Z"
+      }
+    },
+    "traa-challenge-orbit": {
+      "no-aa": {
+        "psnr": 20.420474760390093,
+        "temporalPsnr": 22.596275187188333,
+        "sharpness": 1.382153006328225,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:07.456Z"
+      },
+      "msaa-4x": {
+        "psnr": 21.05631741000314,
+        "temporalPsnr": 23.436886986524787,
+        "sharpness": 1.3491052384195168,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:10.318Z"
+      },
+      "fxaa": {
+        "psnr": 21.38683142618038,
+        "temporalPsnr": 25.867744019887752,
+        "sharpness": 0.5182717762134179,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:13.179Z"
+      },
+      "smaa": {
+        "psnr": 21.28281907600684,
+        "temporalPsnr": 23.47518491782229,
+        "sharpness": 1.223191438189484,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:16.052Z"
+      },
+      "traa.dev": {
+        "psnr": 24.313972144847902,
+        "temporalPsnr": 30.600262124542997,
+        "sharpness": 0.4481168542458852,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:18.929Z"
+      },
+      "traa.fixed": {
+        "psnr": 25.937953110189195,
+        "temporalPsnr": 31.817328570486794,
+        "sharpness": 0.6217544597611794,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:21.806Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 24.712597845805565,
+        "temporalPsnr": 31.598235091345956,
+        "sharpness": 0.4539779779099994,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:24.683Z"
+      },
+      "taau.dev": {
+        "psnr": 21.326768272549515,
+        "temporalPsnr": 30.869493110100787,
+        "sharpness": 0.1678771660577882,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:27.565Z"
+      },
+      "taau.fixed": {
+        "psnr": 21.406760254328326,
+        "temporalPsnr": 30.996501854639924,
+        "sharpness": 0.16540340237872028,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:30.467Z"
+      },
+      "traa.traa-catmull-rom": {
+        "psnr": 25.234078939351075,
+        "temporalPsnr": 30.555003497436346,
+        "sharpness": 0.5975324835821596,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:33.351Z"
+      }
+    },
+    "traa-challenge-still": {
+      "no-aa": {
+        "psnr": 20.595587735857414,
+        "temporalPsnr": 23.416213263017617,
+        "sharpness": 1.3828745380767435,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:56.932Z"
+      },
+      "msaa-4x": {
+        "psnr": 21.29744004310598,
+        "temporalPsnr": 24.24266350485231,
+        "sharpness": 1.3436764011316435,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:34:59.774Z"
+      },
+      "fxaa": {
+        "psnr": 21.467049261857273,
+        "temporalPsnr": 26.899138985436203,
+        "sharpness": 0.4985246541678566,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:02.623Z"
+      },
+      "smaa": {
+        "psnr": 21.37482076122357,
+        "temporalPsnr": 24.075673602885452,
+        "sharpness": 1.229595196788153,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:05.484Z"
+      },
+      "traa.dev": {
+        "psnr": 24.37091823299047,
+        "temporalPsnr": 30.96798450395644,
+        "sharpness": 0.461979651031711,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:08.383Z"
+      },
+      "traa.fixed": {
+        "psnr": 25.852999543699163,
+        "temporalPsnr": 32.166492069056844,
+        "sharpness": 0.6140059756401983,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:11.261Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 24.902829593149292,
+        "temporalPsnr": 31.950322466339784,
+        "sharpness": 0.48432783678231234,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:14.132Z"
+      },
+      "taau.dev": {
+        "psnr": 21.365721884262435,
+        "temporalPsnr": 31.242116997553047,
+        "sharpness": 0.17220548460085086,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:17.010Z"
+      },
+      "taau.fixed": {
+        "psnr": 21.44732761915801,
+        "temporalPsnr": 31.425420965882104,
+        "sharpness": 0.17065861433082433,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:19.893Z"
+      },
+      "traa.traa-catmull-rom": {
+        "psnr": 25.12890146589696,
+        "temporalPsnr": 30.9439736109055,
+        "sharpness": 0.5875648412777611,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:22.769Z"
+      }
+    },
+    "thin-lines": {
+      "no-aa": {
+        "psnr": 14.236036292730072,
+        "temporalPsnr": 13.909944064001936,
+        "sharpness": 1.3258030623817505,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:42.201Z"
+      },
+      "msaa-4x": {
+        "psnr": 14.566777666897346,
+        "temporalPsnr": 14.305564212091342,
+        "sharpness": 1.2924673126378625,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:44.802Z"
+      },
+      "fxaa": {
+        "psnr": 16.652454191550678,
+        "temporalPsnr": 17.627906518194777,
+        "sharpness": 0.7932354258324407,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:47.863Z"
+      },
+      "smaa": {
+        "psnr": 15.67499633794011,
+        "temporalPsnr": 15.623351031647443,
+        "sharpness": 1.131779183896409,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:50.799Z"
+      },
+      "traa.dev": {
+        "psnr": 19.88744991547283,
+        "temporalPsnr": 21.823765861600236,
+        "sharpness": 0.6460283597149103,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:54.463Z"
+      },
+      "traa.fixed": {
+        "psnr": 20.925222816258536,
+        "temporalPsnr": 22.038500692620183,
+        "sharpness": 0.7420144189216635,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:35:57.900Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 19.88744991547283,
+        "temporalPsnr": 21.823765861600236,
+        "sharpness": 0.6460283597149103,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:01.340Z"
+      },
+      "taau.dev": {
+        "psnr": 14.628916483899044,
+        "temporalPsnr": 21.32634538815085,
+        "sharpness": 0.2806444006874184,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:04.270Z"
+      },
+      "taau.fixed": {
+        "psnr": 14.526347419152968,
+        "temporalPsnr": 21.589711044710466,
+        "sharpness": 0.26740786815285505,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:07.193Z"
+      },
+      "traa.traa-catmull-rom": {
+        "psnr": 20.925222816258536,
+        "temporalPsnr": 22.038500692620183,
+        "sharpness": 0.7420144189216635,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:10.596Z"
+      }
+    },
+    "morph-field": {
+      "no-aa": {
+        "psnr": 17.947476067855117,
+        "temporalPsnr": 24.775669069911018,
+        "sharpness": 1.1849267492219777,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:28.477Z"
+      },
+      "traa.dev": {
+        "psnr": 19.221969760117446,
+        "temporalPsnr": 23.978143493420163,
+        "sharpness": 0.5782225737422522,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:31.282Z"
+      },
+      "traa.fixed": {
+        "psnr": 26.563290704483016,
+        "temporalPsnr": 34.4668043671559,
+        "sharpness": 0.8933389696278843,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:34.111Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 25.603132626689167,
+        "temporalPsnr": 34.251535122689624,
+        "sharpness": 0.7794039618512323,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:36.704Z"
+      },
+      "traa.morph-velocity": {
+        "psnr": 25.603132626689167,
+        "temporalPsnr": 34.251535122689624,
+        "sharpness": 0.7794039618512323,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:36:39.288Z"
+      }
+    },
+    "ao-room": {
+      "no-aa": {
+        "psnr": 36.49633506005688,
+        "temporalPsnr": 42.698336720167646,
+        "sharpness": 2.9524612018314165,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:37.765Z"
+      },
+      "traa.dev": {
+        "psnr": 39.29925028234547,
+        "temporalPsnr": 50.180850821685866,
+        "sharpness": 0.8362118219665241,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:40.654Z"
+      },
+      "traa.fixed": {
+        "psnr": 42.725025525706215,
+        "temporalPsnr": 49.26813111993905,
+        "sharpness": 1.1381383925260113,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:43.483Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 41.10168527763582,
+        "temporalPsnr": 49.14434783701708,
+        "sharpness": 1.045468664886475,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:46.060Z"
+      },
+      "traa.ao-gi-ign": {
+        "psnr": 41.1011048890913,
+        "temporalPsnr": 49.14556274183069,
+        "sharpness": 1.045731032283067,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:48.883Z"
+      },
+      "traa.bounded-jitter": {
+        "psnr": 41.1134704556833,
+        "temporalPsnr": 49.19300561155687,
+        "sharpness": 1.0710214779570388,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:51.721Z"
+      },
+      "traa.gtao-rotation": {
+        "psnr": 39.303310987571734,
+        "temporalPsnr": 50.18235986218623,
+        "sharpness": 0.8357656293010721,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:54.563Z"
+      },
+      "denoise.dev": {
+        "psnr": 36.385546892996594,
+        "temporalPsnr": 44.33565205277806,
+        "sharpness": 0.8822947195688099,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:57.136Z"
+      },
+      "denoise.fixed": {
+        "psnr": 37.29391194735951,
+        "temporalPsnr": 44.165439909228496,
+        "sharpness": 1.0725639241834761,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:37:59.707Z"
+      },
+      "denoise.denoise-rotation": {
+        "psnr": 36.35978316805535,
+        "temporalPsnr": 44.17981496884539,
+        "sharpness": 0.8760342677810098,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:38:02.285Z"
+      }
+    },
+    "ssgi-box": {
+      "no-aa": {
+        "psnr": 23.440341197076012,
+        "temporalPsnr": 36.87591988918771,
+        "sharpness": 11.453145222879074,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:44:34.675Z"
+      },
+      "traa.dev": {
+        "psnr": 30.248144939116482,
+        "temporalPsnr": 39.148952772092066,
+        "sharpness": 2.0782659166937494,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:44:38.370Z"
+      },
+      "traa.fixed": {
+        "psnr": 29.26359433463572,
+        "temporalPsnr": 39.51534031104817,
+        "sharpness": 1.7530614889684244,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:44:41.801Z"
+      },
+      "traa-linear.fixed": {
+        "psnr": 29.283121859029464,
+        "temporalPsnr": 39.36094171681507,
+        "sharpness": 1.5991219929943203,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:44:44.935Z"
+      },
+      "traa.ao-gi-ign": {
+        "psnr": 29.283121859029464,
+        "temporalPsnr": 39.36094171681507,
+        "sharpness": 1.5991219929943203,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:44:48.102Z"
+      },
+      "traa.bounded-jitter": {
+        "psnr": 29.18377445449159,
+        "temporalPsnr": 39.412245440349274,
+        "sharpness": 1.8982960287848945,
+        "frames": 90,
+        "generatedAt": "2026-10-13T21:44:51.757Z"
+      }
+    }
+  }
+}

@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "title": "three-aa-fidelity",
+  "renderServer": {
+    "developmentUrl": "http://127.0.0.1:5173/",
+    "deployedUrl": "https://three-aa-fidelity.ben3d.ca/render/",
+    "entry": "index.html"
+  },
+  "renderers": [
+    {
+      "id": "reference",
+      "name": "Reference · 4×4 supersampled, Lanczos",
+      "category": "References",
+      "reference": true,
+      "params": {
+        "aa": "none",
+        "variant": "fixed",
+        "quality": "reference"
+      },
+      "supersample": {
+        "factor": 4,
+        "filter": "lanczos3"
+      }
+    },
+    {
+      "id": "no-aa",
+      "name": "No AA",
+      "category": "Baselines",
+      "params": {
+        "aa": "none",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "msaa-4x",
+      "name": "MSAA 4×",
+      "category": "Baselines",
+      "params": {
+        "aa": "msaa",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "fxaa",
+      "name": "FXAA",
+      "category": "Baselines",
+      "params": {
+        "aa": "fxaa",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "smaa",
+      "name": "SMAA",
+      "category": "Baselines",
+      "params": {
+        "aa": "smaa",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "traa.dev",
+      "name": "TRAA · dev (baseline)",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "dev"
+      }
+    },
+    {
+      "id": "traa.fixed",
+      "name": "TRAA · all fixes",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "traa-linear.fixed",
+      "name": "TRAA bilinear history · all fixes",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "fixed",
+        "traa": {
+          "historySampling": "linear"
+        }
+      }
+    },
+    {
+      "id": "taau.dev",
+      "name": "TAAU 50% · dev (baseline)",
+      "category": "TAAU",
+      "params": {
+        "aa": "taau",
+        "variant": "dev"
+      }
+    },
+    {
+      "id": "taau.fixed",
+      "name": "TAAU 50% · all fixes",
+      "category": "TAAU",
+      "params": {
+        "aa": "taau",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "traa.traa-catmull-rom",
+      "name": "TRAA · TRAA Catmull-Rom",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "traa-catmull-rom"
+      }
+    },
+    {
+      "id": "traa.morph-velocity",
+      "name": "TRAA · Morph target velocity",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "morph-velocity"
+      }
+    },
+    {
+      "id": "taau.taau-lock",
+      "name": "TAAU 50% · TAAU lock history",
+      "category": "TAAU",
+      "params": {
+        "aa": "taau",
+        "variant": "taau-lock"
+      }
+    },
+    {
+      "id": "taau.taau-black-luma",
+      "name": "TAAU 50% · TAAU black neighborhoods",
+      "category": "TAAU",
+      "params": {
+        "aa": "taau",
+        "variant": "taau-black-luma"
+      }
+    },
+    {
+      "id": "traa-probe.dev",
+      "name": "TRAA + 2nd velocity pass · dev (baseline)",
+      "category": "TRAA + 2nd velocity pass",
+      "params": {
+        "aa": "traa",
+        "variant": "dev",
+        "extraVelocityPass": true
+      }
+    },
+    {
+      "id": "traa-probe.fixed",
+      "name": "TRAA + 2nd velocity pass · all fixes",
+      "category": "TRAA + 2nd velocity pass",
+      "params": {
+        "aa": "traa",
+        "variant": "fixed",
+        "extraVelocityPass": true
+      }
+    },
+    {
+      "id": "traa-probe.velocity-history",
+      "name": "TRAA + 2nd velocity pass · Velocity history per pass",
+      "category": "TRAA + 2nd velocity pass",
+      "params": {
+        "aa": "traa",
+        "variant": "velocity-history",
+        "extraVelocityPass": true
+      }
+    },
+    {
+      "id": "traa.ao-gi-ign",
+      "name": "TRAA · GTAO/SSGI animated IGN",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "ao-gi-ign"
+      }
+    },
+    {
+      "id": "traa.bounded-jitter",
+      "name": "TRAA · GTAO/SSGI bounded jitter",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "bounded-jitter"
+      }
+    },
+    {
+      "id": "traa.gtao-rotation",
+      "name": "TRAA · GTAO rotation units",
+      "category": "TRAA",
+      "params": {
+        "aa": "traa",
+        "variant": "gtao-rotation"
+      }
+    },
+    {
+      "id": "denoise.dev",
+      "name": "DenoiseNode · dev (baseline)",
+      "category": "DenoiseNode",
+      "params": {
+        "aa": "denoise",
+        "variant": "dev"
+      }
+    },
+    {
+      "id": "denoise.fixed",
+      "name": "DenoiseNode · all fixes",
+      "category": "DenoiseNode",
+      "params": {
+        "aa": "denoise",
+        "variant": "fixed"
+      }
+    },
+    {
+      "id": "denoise.denoise-rotation",
+      "name": "DenoiseNode · DenoiseNode rotation",
+      "category": "DenoiseNode",
+      "params": {
+        "aa": "denoise",
+        "variant": "denoise-rotation"
+      }
+    }
+  ],
+  "scenes": [
+    {
+      "id": "traa-challenge-pan",
+      "name": "TRAA challenge · pan",
+      "category": "Anti-aliasing",
+      "tags": [
+        "traa",
+        "motion"
+      ],
+      "params": {
+        "content": "traa-challenge",
+        "camera": "pan"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "msaa-4x",
+          "fxaa",
+          "smaa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "taau.dev",
+          "taau.fixed",
+          "traa.traa-catmull-rom",
+          "traa.morph-velocity",
+          "taau.taau-lock",
+          "taau.taau-black-luma",
+          "traa-probe.dev",
+          "traa-probe.fixed",
+          "traa-probe.velocity-history"
+        ]
+      }
+    },
+    {
+      "id": "traa-challenge-orbit",
+      "name": "TRAA challenge · orbit",
+      "category": "Anti-aliasing",
+      "tags": [
+        "traa",
+        "motion"
+      ],
+      "params": {
+        "content": "traa-challenge",
+        "camera": "orbit"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "msaa-4x",
+          "fxaa",
+          "smaa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "taau.dev",
+          "taau.fixed",
+          "traa.traa-catmull-rom"
+        ]
+      }
+    },
+    {
+      "id": "traa-challenge-still",
+      "name": "TRAA challenge · still camera",
+      "category": "Anti-aliasing",
+      "tags": [
+        "traa"
+      ],
+      "params": {
+        "content": "traa-challenge",
+        "camera": "still"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "msaa-4x",
+          "fxaa",
+          "smaa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "taau.dev",
+          "taau.fixed",
+          "traa.traa-catmull-rom"
+        ]
+      }
+    },
+    {
+      "id": "thin-lines",
+      "name": "Thin lines, fence and floor · dolly",
+      "category": "Anti-aliasing",
+      "tags": [
+        "traa",
+        "thin geometry",
+        "alpha test"
+      ],
+      "params": {
+        "content": "thin-lines",
+        "camera": "dolly"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "msaa-4x",
+          "fxaa",
+          "smaa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "taau.dev",
+          "taau.fixed",
+          "traa.traa-catmull-rom"
+        ]
+      }
+    },
+    {
+      "id": "morph-field",
+      "name": "Morph target field",
+      "category": "Motion vectors",
+      "tags": [
+        "traa",
+        "morph targets"
+      ],
+      "params": {
+        "content": "morph-field",
+        "camera": "still"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "traa.morph-velocity"
+        ]
+      }
+    },
+    {
+      "id": "ao-room",
+      "name": "GTAO room · orbit",
+      "category": "Temporal effects",
+      "tags": [
+        "gtao",
+        "traa",
+        "noise"
+      ],
+      "params": {
+        "content": "ao-room",
+        "camera": "orbit"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "traa.ao-gi-ign",
+          "traa.bounded-jitter",
+          "traa.gtao-rotation",
+          "denoise.dev",
+          "denoise.fixed",
+          "denoise.denoise-rotation"
+        ]
+      }
+    },
+    {
+      "id": "ssgi-box",
+      "name": "SSGI box · pan",
+      "category": "Temporal effects",
+      "tags": [
+        "ssgi",
+        "traa",
+        "noise"
+      ],
+      "params": {
+        "content": "ssgi-box",
+        "camera": "pan"
+      },
+      "dynamic": {
+        "width": 640,
+        "height": 360,
+        "frames": 120,
+        "warmup": 30,
+        "fps": 60,
+        "renderers": [
+          "no-aa",
+          "traa.dev",
+          "traa.fixed",
+          "traa-linear.fixed",
+          "traa.ao-gi-ign",
+          "traa.bounded-jitter"
+        ]
+      }
+    }
+  ],
+  "dynamic": {
+    "reference": "reference",
+    "output": "motion"
+  }
+}
