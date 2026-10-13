@@ -1,0 +1,172 @@
+{
+  "title": "three-aa-fidelity",
+  "renderers": [
+    {
+      "id": "reference",
+      "label": "Reference · 4×4 supersampled, Lanczos",
+      "reference": true,
+      "enabled": true,
+      "category": "References"
+    },
+    {
+      "id": "no-aa",
+      "label": "No AA",
+      "reference": false,
+      "enabled": true,
+      "category": "Baselines"
+    },
+    {
+      "id": "msaa-4x",
+      "label": "MSAA 4×",
+      "reference": false,
+      "enabled": true,
+      "category": "Baselines"
+    },
+    {
+      "id": "fxaa",
+      "label": "FXAA",
+      "reference": false,
+      "enabled": true,
+      "category": "Baselines"
+    },
+    {
+      "id": "smaa",
+      "label": "SMAA",
+      "reference": false,
+      "enabled": true,
+      "category": "Baselines"
+    },
+    {
+      "id": "traa.dev",
+      "label": "TRAA · dev (baseline)",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "traa.fixed",
+      "label": "TRAA · all fixes",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "traa-linear.fixed",
+      "label": "TRAA bilinear history · all fixes",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "taau.dev",
+      "label": "TAAU 50% · dev (baseline)",
+      "reference": false,
+      "enabled": true,
+      "category": "TAAU"
+    },
+    {
+      "id": "taau.fixed",
+      "label": "TAAU 50% · all fixes",
+      "reference": false,
+      "enabled": true,
+      "category": "TAAU"
+    },
+    {
+      "id": "traa.traa-catmull-rom",
+      "label": "TRAA · TRAA Catmull-Rom",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "traa.morph-velocity",
+      "label": "TRAA · Morph target velocity",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "taau.taau-lock",
+      "label": "TAAU 50% · TAAU lock history",
+      "reference": false,
+      "enabled": true,
+      "category": "TAAU"
+    },
+    {
+      "id": "taau.taau-black-luma",
+      "label": "TAAU 50% · TAAU black neighborhoods",
+      "reference": false,
+      "enabled": true,
+      "category": "TAAU"
+    },
+    {
+      "id": "traa-probe.dev",
+      "label": "TRAA + 2nd velocity pass · dev (baseline)",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA + 2nd velocity pass"
+    },
+    {
+      "id": "traa-probe.fixed",
+      "label": "TRAA + 2nd velocity pass · all fixes",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA + 2nd velocity pass"
+    },
+    {
+      "id": "traa-probe.velocity-history",
+      "label": "TRAA + 2nd velocity pass · Velocity history per pass",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA + 2nd velocity pass"
+    },
+    {
+      "id": "traa.ao-gi-ign",
+      "label": "TRAA · GTAO/SSGI animated IGN",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "traa.bounded-jitter",
+      "label": "TRAA · GTAO/SSGI bounded jitter",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "traa.gtao-rotation",
+      "label": "TRAA · GTAO rotation units",
+      "reference": false,
+      "enabled": true,
+      "category": "TRAA"
+    },
+    {
+      "id": "denoise.dev",
+      "label": "DenoiseNode · dev (baseline)",
+      "reference": false,
+      "enabled": true,
+      "category": "DenoiseNode"
+    },
+    {
+      "id": "denoise.fixed",
+      "label": "DenoiseNode · all fixes",
+      "reference": false,
+      "enabled": true,
+      "category": "DenoiseNode"
+    },
+    {
+      "id": "denoise.denoise-rotation",
+      "label": "DenoiseNode · DenoiseNode rotation",
+      "reference": false,
+      "enabled": true,
+      "category": "DenoiseNode"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "motion",
+      "label": "Motion"
+    }
+  ]
+}

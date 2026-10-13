@@ -1,0 +1,82 @@
+{
+  "repository": "https://github.com/bhouston/three.js.git",
+  "variants": [
+    {
+      "id": "dev",
+      "label": "dev (baseline)",
+      "ref": "dev",
+      "sha": "e615266e7647f0a062219d55e79913237594b6b7",
+      "description": "bhouston/three.js dev, the baseline every fix is compared against."
+    },
+    {
+      "id": "fixed",
+      "label": "all fixes",
+      "ref": "swarm/56-aa-integration",
+      "sha": "932fddca54df32dc829f03549117f5a7ce7800c7",
+      "description": "dev with every fix and improvement below merged."
+    },
+    {
+      "id": "traa-catmull-rom",
+      "label": "TRAA Catmull-Rom",
+      "ref": "swarm/56-traa-catmull-rom",
+      "sha": "d6ee3a7e0bc85657f26a4e971b2a0462bb2ec836",
+      "description": "TRAANode samples its history with a 5-tap Catmull-Rom filter."
+    },
+    {
+      "id": "ao-gi-ign",
+      "label": "GTAO/SSGI animated IGN",
+      "ref": "swarm/56-ao-gi-animated-ign",
+      "sha": "e8fcf5b28b3027cf6d71d78939fb940db16d51e5",
+      "description": "GTAO/SSGI ray step jitter with animated interleaved gradient noise (includes the bounded jitter fix)."
+    },
+    {
+      "id": "bounded-jitter",
+      "label": "GTAO/SSGI bounded jitter",
+      "ref": "swarm/65-bounded-ray-jitter",
+      "sha": "2281253a821fed81313c6cd1d59de9df20f87c54",
+      "description": "GTAO/SSGI keep the ray step jitter within its sampling stratum (bhouston/three.js#43)."
+    },
+    {
+      "id": "gtao-rotation",
+      "label": "GTAO rotation units",
+      "ref": "swarm/65-gtao-rotation",
+      "sha": "ceb8e3ae3e7c772bd3d128233a72d7454c1bce06",
+      "description": "GTAO temporal slice rotation in slice units (bhouston/three.js#37)."
+    },
+    {
+      "id": "velocity-history",
+      "label": "Velocity history per pass",
+      "ref": "swarm/65-velocity-history",
+      "sha": "733294284459d728a49696665a7d3a0e62fd4d26",
+      "description": "Velocity history across render passes (bhouston/three.js#40)."
+    },
+    {
+      "id": "morph-velocity",
+      "label": "Morph target velocity",
+      "ref": "swarm/65-morph-velocity",
+      "sha": "0d6d0804ccff5171b57cdaf0d28b631033fa4120",
+      "description": "Previous morph weights for motion vectors (bhouston/three.js#41)."
+    },
+    {
+      "id": "denoise-rotation",
+      "label": "DenoiseNode rotation",
+      "ref": "swarm/65-denoise-rotation",
+      "sha": "15f547fe7cb81075108627eb2d38e0fec3556d0d",
+      "description": "DenoiseNode noise indexing and kernel rotation (bhouston/three.js#35)."
+    },
+    {
+      "id": "taau-lock",
+      "label": "TAAU lock history",
+      "ref": "swarm/65-taau-lock-history",
+      "sha": "80761f5b3ca4471fc0f3365b9407b38180a16f06",
+      "description": "TAAU lock history persistence (bhouston/three.js#38)."
+    },
+    {
+      "id": "taau-black-luma",
+      "label": "TAAU black neighborhoods",
+      "ref": "swarm/65-taau-black-luma",
+      "sha": "ae2d5bd0ebbeb516dc7c4c9bc34a46c58bf56da7",
+      "description": "TAAU division by zero in black neighborhoods (bhouston/three.js#39)."
+    }
+  ]
+}

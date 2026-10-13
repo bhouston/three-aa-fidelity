@@ -1,0 +1,11 @@
+packages:
+  - render
+  - submodules/fidelity-kit/packages/cli
+  - submodules/fidelity-kit/packages/viewer
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+  puppeteer: true
+
+linkWorkspacePackages: false
