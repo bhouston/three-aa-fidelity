@@ -11,12 +11,13 @@
     "build:variants": "node scripts/build-three-variants.mjs",
     "render:dev": "pnpm --filter @three-aa-fidelity/render dev",
     "render:preview": "pnpm --filter @three-aa-fidelity/render preview",
+    "temporal": "fidelity-kit temporal --registry registry.json --out fidelity-results",
     "dynamic": "fidelity-kit dynamic --registry registry.json --out fidelity-results",
     "site:dev": "fidelity-kit dev fidelity-results --registry registry.json",
     "site:build": "node scripts/build-site.mjs",
     "lint": "oxlint render scripts test",
-    "format": "oxfmt render scripts test .github README.md package.json three-variants.json vitest.config.js",
-    "format:check": "oxfmt --check render scripts test .github README.md package.json three-variants.json vitest.config.js",
+    "format": "oxfmt render scripts test .github README.md fidelity-results/README.md package.json three-variants.json vitest.config.js",
+    "format:check": "oxfmt --check render scripts test .github README.md fidelity-results/README.md package.json three-variants.json vitest.config.js",
     "test": "vitest run"
   },
   "devDependencies": {

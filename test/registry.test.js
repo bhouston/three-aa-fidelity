@@ -24,6 +24,19 @@ describe('registry', () => {
     for (const renderer of registry.renderers) expect(variants).toContain(renderer.params.variant);
   });
 
+  it('enables temporal sequences without reusing static fidelity', () => {
+    expect(registry.staticFidelity).toBe(false);
+    expect(registry.temporalFidelity.reference).toBe('reference');
+    expect(registry.dynamic).toBeUndefined();
+    const rendererIds = new Set(registry.renderers.map((renderer) => renderer.id));
+    for (const scene of registry.scenes) {
+      expect(scene.dynamic).toBeUndefined();
+      expect(scene.temporalFidelity.frames).toBeGreaterThan(scene.temporalFidelity.warmup);
+      expect(scene.temporalFidelity.renderers.length).toBeGreaterThan(0);
+      for (const id of scene.temporalFidelity.renderers) expect(rendererIds.has(id)).toBe(true);
+    }
+  });
+
   it('pins every variant to a commit', () => {
     for (const variant of read('three-variants.json').variants) expect(variant.sha).toMatch(/^[0-9a-f]{40}$/);
   });

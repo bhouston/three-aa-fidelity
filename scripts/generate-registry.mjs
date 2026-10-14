@@ -1,4 +1,4 @@
-// Generates registry.json: renderers are anti-aliasing methods × three.js variants, scenes opt into dynamic
+// Generates registry.json: renderers are anti-aliasing methods × three.js variants, scenes opt into temporal
 // fidelity with the renderers that apply to them. Edit this file, then run `node scripts/generate-registry.mjs`.
 import { readFileSync, writeFileSync } from 'node:fs';
 
@@ -134,8 +134,9 @@ const registry = {
     },
     ...rendererIds.map(renderer),
   ],
-  scenes: scenes.map(({ renderers, ...scene }) => ({ ...scene, dynamic: { ...sequence, renderers } })),
-  dynamic: { reference: 'reference', output: 'motion' },
+  scenes: scenes.map(({ renderers, ...scene }) => ({ ...scene, temporalFidelity: { ...sequence, renderers } })),
+  staticFidelity: false,
+  temporalFidelity: { reference: 'reference', output: 'motion' },
 };
 delete registry.$schema;
 writeFileSync(new URL('../registry.json', import.meta.url), JSON.stringify(registry, null, 2) + '\n');
