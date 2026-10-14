@@ -240,7 +240,7 @@
         "content": "traa-challenge",
         "camera": "pan"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -278,7 +278,7 @@
         "content": "traa-challenge",
         "camera": "orbit"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -309,7 +309,7 @@
         "content": "traa-challenge",
         "camera": "still"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -342,7 +342,7 @@
         "content": "thin-lines",
         "camera": "dolly"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -374,7 +374,7 @@
         "content": "morph-field",
         "camera": "still"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -402,7 +402,7 @@
         "content": "ao-room",
         "camera": "orbit"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -435,7 +435,7 @@
         "content": "ssgi-box",
         "camera": "pan"
       },
-      "dynamic": {
+      "temporalFidelity": {
         "width": 640,
         "height": 360,
         "frames": 120,
@@ -452,7 +452,8 @@
       }
     }
   ],
-  "dynamic": {
+  "staticFidelity": false,
+  "temporalFidelity": {
     "reference": "reference",
     "output": "motion"
   }

@@ -1,5 +1,6 @@
 {
   "title": "three-aa-fidelity",
+  "staticFidelity": false,
   "renderers": [
     {
       "id": "reference",
@@ -166,7 +167,8 @@
   "outputs": [
     {
       "id": "motion",
-      "label": "Motion"
+      "label": "Motion",
+      "kind": "temporal"
     }
   ]
 }

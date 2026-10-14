@@ -1,4 +1,4 @@
-// Prints a Markdown table validating each three.js change: the renderer with the change against its baseline,
+// Prints Markdown bullets validating each three.js change: the renderer with the change against its baseline,
 // per scene, from fidelity-results/dynamic.json. Usage: node scripts/summarize-pr-validation.mjs
 import { readFileSync } from 'node:fs';
 
@@ -18,13 +18,12 @@ const CHECKS = [
 ];
 const f = (v, d = 2) => (v === null ? '∞' : v.toFixed(d));
 const signed = (v, d = 2) => `${v >= 0 ? '+' : ''}${v.toFixed(d)}`;
-console.log('| Change | Scene | PSNR (dB) | Temporal PSNR (dB) | Sharpness |\n|---|---|---|---|---|');
 for (const [name, base, test] of CHECKS)
   for (const [scene, row] of Object.entries(results)) {
     const a = row[base];
     const b = row[test];
     if (!a || !b) continue;
     console.log(
-      `| ${name} | ${scene} | ${f(a.psnr)} → ${f(b.psnr)} (${signed(b.psnr - a.psnr)}) | ${f(a.temporalPsnr)} → ${f(b.temporalPsnr)} (${signed(b.temporalPsnr - a.temporalPsnr)}) | ${f(a.sharpness, 3)} → ${f(b.sharpness, 3)} |`,
+      `- **${name}** (${scene}): sequence PSNR ${f(a.psnr)} → ${f(b.psnr)} dB (${signed(b.psnr - a.psnr)}); temporal PSNR ${f(a.temporalPsnr)} → ${f(b.temporalPsnr)} dB (${signed(b.temporalPsnr - a.temporalPsnr)}); sharpness ${f(a.sharpness, 3)} → ${f(b.sharpness, 3)}.`,
     );
   }
